@@ -11,7 +11,7 @@ body {
 
 header {
     height: 50px;
-    width: calc(100% - 25px);
+    width: calc(100% - 35px);
     position: fixed;
     right: 0;
     top: 0;
@@ -21,7 +21,7 @@ header {
 
 aside {
     height: calc(100vh - 50px);
-    width: 25px;
+    width: 35px;
     background-color: #000000;
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@ aside {
 main {
     background-color: #141922;
     color: white;
-    width: calc(100% - 25px);
+    width: calc(100% - 35px);
     float: right;
     position: relative;
     top: 50px;
@@ -44,4 +44,19 @@ footer {
     position: fixed;
     z-index: 2;
     bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    aside {
+        width: 150px;
+    }
+    header, main {
+        width: calc(100% - 150px);
+    }
+    main {
+        top: 70px;
+    }
+    header, footer {
+        height: 70px;
+    }
 }
