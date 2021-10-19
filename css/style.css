@@ -11,7 +11,8 @@ body {
 
 header {
     height: 50px;
-    width: 100%;
+    width: calc(100% - 25px);
+    float: right;
     background-color: #080b12;
 }
 
@@ -27,8 +28,8 @@ aside {
 main {
     background-color: #141922;
     color: white;
-    width: 100%;
-    padding-left: 25px
+    width: calc(100% - 25px);
+    float: right;
 }
 
 footer {
