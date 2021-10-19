@@ -5,25 +5,30 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
 #big-c {
     height: 100vh;
     width: 100%;
 }
 
     #top-c {
-        height: calc(100% - 60px);
         width: 100%;
     }
         nav {
             float: left;
-            height: 100%;
+            /* Altrimenti sfora per via dell'height del main */
+            height: calc(100% - 60px);
             width: 40px;
             background-color: black;
             position: fixed;
         }
         #top-right-c {
             width: calc(100% - 40px);
-            height: 100%;
             float: right;
         }
             header {
@@ -44,5 +49,63 @@
         width: 100%;
         background-color: #282828;
         position: fixed;
+        bottom: 0;
         z-index: 2;
     }
+
+@media screen and (min-width: 358px) {
+    nav {
+        width: 130px;
+        height: calc(100% - 70px);
+    }
+    #top-right-c {
+        width: calc(100% - 130px);
+    }
+        header {
+            height: 70px;
+        }
+        main {
+            padding: 70px 0;
+        }
+    footer {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 493px) {
+    nav {
+        width: 120px;
+        height: calc(100% - 80px);
+    }
+    #top-right-c {
+        width: calc(100% - 120px);
+    }
+        header {
+            height: 80px;
+        }
+        main {
+            padding: 80px 0;
+        }
+    footer {
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 805px) {
+    nav {
+        width: 150px;
+        height: calc(100% - 70px);
+    }
+    #top-right-c {
+        width: calc(100% - 150px);
+    }
+        header {
+            height: 70px;
+        }
+        main {
+            padding: 70px 0;
+        }
+    footer {
+        height: 70px;
+    }
+}
