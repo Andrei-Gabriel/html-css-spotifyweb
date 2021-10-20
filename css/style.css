@@ -27,6 +27,7 @@
 
     
 /* Layout per diversi dispositivi */
+/* Inizio layout small */
 @media screen and (min-width: 358px) {
     nav {
         width: 130px;
@@ -46,6 +47,7 @@
     }
 }
 
+/* Inizio layout medium */
 @media screen and (min-width: 493px) {
     nav {
         width: 120px;
@@ -65,6 +67,7 @@
     }
 }
 
+/* Inizio layout large */
 @media screen and (min-width: 805px) {
     nav {
         width: 150px;

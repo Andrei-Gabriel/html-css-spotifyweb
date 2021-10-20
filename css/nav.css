@@ -1,3 +1,4 @@
+/* Inizio nav-sx */
 nav {
     float: left;
     /* Altrimenti sfora per via dell'height del main */
@@ -9,6 +10,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
 }
+    /* Inizio nav-sx-top */
     #nav-top {
         display: flex;
         flex-direction: column;
@@ -37,6 +39,7 @@ nav {
             background-image: url("../img/libreria.svg");
         }
 
+    /* Inizio nav-sx-bottom */
     #nav-bottom {
         display: flex;
         align-items: center;
@@ -59,7 +62,7 @@ nav {
             width: 16px;
         }
         
-        
+/* Inizio layout small */
 @media screen and (min-width: 358px) {
 
 }
