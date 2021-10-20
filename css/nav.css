@@ -79,9 +79,21 @@ nav {
         #nav-top .logo {
             background-image: url("../img/logo.svg");
             background-repeat: no-repeat;
-            height: 20px;
-            width: 20px;
-            margin-top: 5px;
+            background-size: 85px 50px;
+            background-position: left;
+            margin-left: 10px;
+            margin-top: unset;
+            height: 50px;
+            width: 100%;
             opacity: unset;
+        }
+        #nav-top > div {
+            background-position: 10px;
+            height: 20px;
+        }
+        #nav-top div.home {
+            border-left: 2px solid #adff2f;
+            background-position: 8px;
+            margin-top: unset;
         }
 }

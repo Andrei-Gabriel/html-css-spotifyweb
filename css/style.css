@@ -31,19 +31,9 @@
 @media screen and (min-width: 358px) {
     nav {
         width: 130px;
-        height: calc(100% - 70px);
     }
     #top-right-c {
         width: calc(100% - 130px);
-    }
-        header {
-            height: 70px;
-        }
-        main {
-            margin-top: 70px;
-        }
-    footer {
-        height: 70px;
     }
 }
 
