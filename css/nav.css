@@ -21,7 +21,7 @@ nav {
             background-size: 16px 16px;
             background-repeat: no-repeat;
             background-position: center;
-            margin-top: 7px;
+            margin-top: 5px;
             opacity: 0.8;
         }
         #nav-top .logo {
@@ -43,27 +43,43 @@ nav {
 
     /* Inizio nav-sx-bottom */
     #nav-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         margin-bottom: 5px;
     }
-        #nav-bottom > div {
-            background-repeat: no-repeat;
-            background-position: center;
+        #download-c {
+            display: flex;
+            justify-content: center;
         }
-        .download {
-            background-image: url("../img/download.svg");
-            background-size: 10px 10px;
-            height: 14px;
-            width: 100%;
+            .download {
+                background-image: url("../img/download.svg");
+                background-position: center;
+                background-size: 10px 10px;
+                height: 14px;
+                width: 14px;
+                background-repeat: no-repeat;
+            }
+            #download-c span {
+                display: none;
+                font-size: 7px;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        #user-c {
+            margin-top: 7px;
+            display: flex;
+            justify-content: center;
         }
+            #user-c span {
+                display: none;
+                color: white;
+                font-size: 9px;
+                font-weight: bold;
+                margin-left: 5px;
+            }
         .user {
             background-image: url("../img/profile.svg");
             background-color: #808080;
+            background-size: 20px;
             border-radius: 50%;
-            margin-top: 7px;
             height: 20px;
             width: 20px;
         }
@@ -96,4 +112,37 @@ nav {
             background-position: 8px;
             margin-top: unset;
         }
+        #nav-bottom {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        #download-c {
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            margin-bottom: 2px;
+        }
+            .download {
+                background-image: url("../img/download.svg");
+                background-position: unset;
+                background-size: 10px 10px;
+                height: 14px;
+                margin-left: 10px;
+            }
+            #download-c span {
+                display: unset;
+            }
+            #user-c {
+                width: calc(100% - 20px);
+                margin-top: unset;
+                margin-left: 10px;
+                padding-top: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-top: 1px solid #717171;
+            }
+                #user-c span {
+                    display: inline;
+                }
 }
