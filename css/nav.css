@@ -14,18 +14,20 @@ nav {
     #nav-top {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
         #nav-top > div {
             height: 16px;
-            width: 16px;
+            width: 100%;
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: center;
             margin-top: 7px;
             opacity: 0.8;
         }
         #nav-top .logo {
             background-image: url("../img/logo-small.svg");
+            background-size: 20px 20px;
             height: 20px;
-            width: 20px;
             margin-top: 5px;
             opacity: unset;
         }
@@ -42,27 +44,44 @@ nav {
     /* Inizio nav-sx-bottom */
     #nav-bottom {
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        width: 100%;
         margin-bottom: 5px;
     }
+        #nav-bottom > div {
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         .download {
             background-image: url("../img/download.svg");
-            height: 10px;
-            width: 10px;
+            background-size: 10px 10px;
+            height: 14px;
+            width: 100%;
         }
         .user {
             background-image: url("../img/profile.svg");
-            background-repeat: no-repeat;
-            background-position: center;
             background-color: #808080;
             border-radius: 50%;
             margin-top: 7px;
-            height: 16px;
-            width: 16px;
+            height: 20px;
+            width: 20px;
         }
         
 /* Inizio layout small */
 @media screen and (min-width: 358px) {
-
+    #nav-top {
+        align-items: flex-start;
+    }
+    #nav-bottom {
+        align-items: flex-start;
+    }    
+        #nav-top .logo {
+            background-image: url("../img/logo.svg");
+            background-repeat: no-repeat;
+            height: 20px;
+            width: 20px;
+            margin-top: 5px;
+            opacity: unset;
+        }
 }
