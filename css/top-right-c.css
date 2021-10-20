@@ -1,6 +1,6 @@
 #top-right-c {
     width: calc(100% - 40px);
-    height: 100%;
+    height: calc(100vh - 60px);
     float: right;
     overflow-y: auto;
     background-color: #141922;
@@ -15,6 +15,6 @@
         z-index: 2;
     }
 
-    #top-right-c p {
+    main {
         margin-top: 60px;
     }
