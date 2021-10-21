@@ -1,5 +1,7 @@
 /* Inizio footer */
 footer {
+    display: flex;
+    align-items: center;
     height: 60px;
     width: 100%;
     background-color: #282828;
@@ -7,3 +9,11 @@ footer {
     bottom: 0;
     z-index: 1;
 }
+    div#brano {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+        #brano img {
+            height: 24px;
+        }

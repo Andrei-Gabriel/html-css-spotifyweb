@@ -9,13 +9,18 @@
 }
     /* Inizio header */
     header {
+        display: flex;
+        justify-content: flex-end;
         height: 60px;
         width: 100%;
-        text-align: right;
         background-color: rgba(8, 11, 18, 0.4);
         position: fixed;
         z-index: 2;
     }
+        header span {
+            text-transform: uppercase;
+            font-size: 8px;
+        }
 
     /* Inizio main */
     main {
