@@ -12,36 +12,46 @@ nav {
 }
     /* Inizio nav-sx-top */
     #nav-top {
+        color: rgba(107, 107, 107, 0.6);
+        font-size: 7px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-        nav #nav-top > div {
-            height: 16px;
-            width: 100%;
-            background-size: 16px 16px;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-top: 5px;
-        }
         #nav-top .logo {
             background-image: url("../img/logo-small.svg");
+            background-repeat: no-repeat;
             background-size: 20px 20px;
             height: 20px;
+            width: 20px;
             margin-top: 5px;
-            margin-bottom: 7px;
+            margin-bottom: 5px;
             opacity: unset;
         }
-        .home {
-            background-image: url("../img/home.svg");
+        .elem {
+            margin-top: 3px;
         }
-        .search {
-            background-image: url("../img/search.svg");
+        .elem div {
+            background-size: 18px 18px;
+            background-position: center;
+            height: 20px;
+            width: 20px;
             opacity: 0.6;
         }
-        .library {
-            background-image: url("../img/libreria.svg");
-            opacity: 0.6;
+            .elem div.home {
+                background-image: url("../img/home.svg");
+                opacity: unset;
+            }
+            .search {
+                background-image: url("../img/search.svg");
+            }
+            .library {
+                background-image: url("../img/libreria.svg");
+            }
+        .elem span {
+            display: none;
         }
+        
 
     /* Inizio playlist */
     nav #nav-top #playlist {
@@ -136,9 +146,7 @@ nav {
         
 /* Inizio layout small */
 @media screen and (min-width: 358px) {
-    #nav-top {
-        align-items: flex-start;
-    }
+    
     #nav-bottom {
         align-items: flex-start;
     }    
@@ -154,16 +162,7 @@ nav {
             width: 100%;
             opacity: unset;
         }
-        nav #nav-top > div {
-            background-position: 10px;
-            height: 20px;
-        }
-        #nav-top div.home {
-            border-left: 2px solid #adff2f;
-            background-position: 8px;
-            margin-top: unset;
-            opacity: unset;
-        }
+        
 
         nav #nav-top #playlist {
             display: unset;
