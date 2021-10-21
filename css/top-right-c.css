@@ -41,42 +41,61 @@
             #nav-main span {
                 margin: 9px 6px;
             }
-        main h2 {
-            font-size: 12px;
-            margin-left: 12px;
-            margin-top: 10px;
-        }
-        #container-main {
+
+        .container-main {
             width: calc(100% - 30px);
-            margin: 15px 15px;
+            margin: 10px 15px 15px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-            #container-main > div {
+        .another {
+            margin-top: 15px;
+        }
+            .container-main > div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 125px;
                 margin-bottom: 5px;
             }
-            #container-main > div:nth-of-type(odd) {
+            .container-main > div:nth-of-type(odd) {
                 margin-right: 10px;
             }
-                #container-main > div > img {
+                .container-main > div > img {
                     width: 125px;
                     height: 125px;
                 }
-                #container-main > div > h4 {
+                .container-main > div > h4 {
                     font-size: 8px;
                     margin: 7px;
                     text-align: center;
                 }
-                #container-main > div > span {
+                .container-main > div > span {
                     font-size: 7px;
                     opacity: 0.6;
                     text-align: center;
                 }
+
+            .ascolta {
+                font-size: 7px;
+                opacity: 0.6;
+            }
+            .cap {
+                display: flex;
+                flex-direction: column;
+                margin-left: 12px;
+                font-size: 12px;
+                margin-left: 12px;
+                margin-top: 20px;
+            }
+                .cap h2 {
+                    margin-bottom: 5px;
+                }
+            
+            .artist img {
+                border-radius: 50%;
+            }
 
 @media screen and (min-width: 358px) {
     header {
