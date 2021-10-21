@@ -11,8 +11,9 @@
     header {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         height: 60px;
-        width: 100%;
+        width: calc(100% - 40px);
         background-color: rgba(8, 11, 18, 0.4);
         position: fixed;
         z-index: 2;
@@ -20,6 +21,9 @@
         header span {
             text-transform: uppercase;
             font-size: 8px;
+            padding: 7px 25px;
+            border: 1px solid white;
+            border-radius: 20px;
         }
 
     /* Inizio main */
