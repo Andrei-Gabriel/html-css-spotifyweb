@@ -2,7 +2,7 @@
 nav {
     float: left;
     /* Altrimenti sfora per via dell'height del main */
-    height: calc(100% - 60px);
+    height: calc(100% - 55px);
     width: 40px;
     background-color: black;
     position: fixed;
@@ -153,6 +153,9 @@ nav {
         
 /* Inizio layout small */
 @media screen and (min-width: 358px) {
+nav {
+    width: 130px;
+}
     #nav-top {
         /* color: rgba(107, 107, 107, 0.6); */
         display: flex;

@@ -2,7 +2,7 @@
 footer {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 55px;
     width: 100%;
     background-color: #282828;
     position: fixed;
@@ -12,21 +12,112 @@ footer {
     div#brano {
         display: flex;
         align-items: center;
-        margin-left: 10px;
+        width: 30%;
     }
         #brano img {
-            height: 24px;
+            height: 18px;
+            margin-left: 10px;
         }
         #info-brano {
             display: flex;
             flex-direction: column;
-            font-size: 8px;
+            font-size: 6px;
             margin-left: 5px;
             color: white;
         }
             #info-brano h5 {
-                font-size: 10px;
+                font-size: 8px;
             }
             #info-brano span {
                 opacity: 0.6;
             }
+    
+    #salva {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 8px;
+    }
+        #salva i:first-child {
+            margin-bottom: 2px;
+        }
+
+    #centro {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+        #azioni {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+        }
+            #azioni i {
+                margin: 0 5px;
+            }
+            #azioni .fa-play-circle {
+                font-size: 24px;
+                margin: 0 10px;
+            }
+        
+        #barra {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        #barra span {
+            font-size: 8px;
+        }
+        #barra > div {
+            width: 60%;
+            margin: 0 5px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: #5a5a5a;
+        }
+            #barra > div > div {
+                width: 0;
+                background-color: #c1c1c1;
+                height: 3px;
+                border-radius: 2px;
+                animation: progress 275s linear infinite;
+            }
+            @keyframes progress {
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+
+        #azioni-dx {
+            margin-left: 10px;
+            color: white;
+            font-size: 8px;
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+        #azioni-dx i {
+            margin: 0 2px;
+        }
+        #volume-c {
+            width: 50%;
+            background-color: #5a5a5a;
+            height: 3px;
+            border-radius: 2px;
+        }
+        #volume-bar {
+            width: 35%;
+            height: 3px;
+            border-radius: 2px;
+            background-color: #c1c1c1;
+        }

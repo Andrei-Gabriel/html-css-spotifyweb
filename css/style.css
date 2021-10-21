@@ -22,16 +22,13 @@
 }
     #top-c {
         width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 55px);
     }
 
     
 /* Layout per diversi dispositivi */
 /* Inizio layout small */
 @media screen and (min-width: 358px) {
-    nav {
-        width: 130px;
-    }
     #top-right-c {
         width: calc(100% - 130px);
     }

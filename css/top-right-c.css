@@ -1,7 +1,7 @@
 /* Inizio top-right-container */
 #top-right-c {
     width: calc(100% - 40px);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
     float: right;
     overflow-y: auto;
     background-color: #141922;
@@ -30,3 +30,9 @@
     main {
         margin-top: 60px;
     }
+
+@media screen and (min-width: 358px) {
+    header {
+        width: calc(100% - 130px);
+    }
+}
